@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="661.0" style="-fx-background-color: #D939F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="27.0" layoutY="73.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <Button layoutX="27.0" layoutY="120.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <Button layoutX="27.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <Button layoutX="27.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <Button layoutX="27.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <Button layoutX="27.0" layoutY="305.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="33.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/casa.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="74.0" layoutY="24.0" text="Tareas" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="80.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="127.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="174.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="220.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="266.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="560.0" layoutY="312.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/estrella.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="51.0" layoutY="93.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="51.0" layoutY="140.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="51.0" layoutY="187.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="51.0" layoutY="233.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="51.0" layoutY="279.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="51.0" layoutY="325.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="586.0" layoutY="28.0" mnemonicParsing="false" opacity="0.37" prefHeight="20.0" prefWidth="36.0" style="-fx-background-color: black;" text="...." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="409.0" mnemonicParsing="false" opacity="0.37" prefHeight="30.0" prefWidth="376.0" style="-fx-background-color: black;" text="+  Agregar una tarea" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="27.0" layoutY="352.0" mnemonicParsing="false" opacity="0.37" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: black;" text="&gt;  Completado 199" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="83.0" layoutY="85.0" prefHeight="21.0" prefWidth="144.0" text="Hacer Practica 2 PSP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="130.0" prefHeight="21.0" prefWidth="144.0" text="Hacer Practica 1 PSP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="177.0" prefHeight="21.0" prefWidth="144.0" text="Hacer Practica 2 DI">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="224.0" prefHeight="21.0" prefWidth="144.0" text="Hacer Practica 1 DI">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="269.0" prefHeight="21.0" prefWidth="163.0" text="Hacer Practica 2 PMDP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="315.0" prefHeight="21.0" prefWidth="163.0" text="Hacer Practica 1 PMDP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
