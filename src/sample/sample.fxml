@@ -26,73 +26,79 @@
          <children>
             <AnchorPane prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 2 PSP" />
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
+                  <RadioButton fx:id="radiobutton1" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea1" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
+                  <Label fx:id="texto1" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 2 PSP" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 1 PSP" />
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
+                  <RadioButton fx:id="radiobutton2" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea2" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
+                  <Label fx:id="texto2" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 2 PSP" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="51.0" prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 2 DI" />
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
+                  <RadioButton fx:id="radiobutton3" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea3" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
+                  <Label fx:id="texto3" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 2 DI" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="92.0" prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 1 DI" />
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
+                  <RadioButton fx:id="radiobutton4" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea4" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
+                  <Label fx:id="texto4" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 1 DI" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="133.0" prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 2 PMDP" />
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
+                  <RadioButton fx:id="radiobutton5" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea5" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
+                  <Label fx:id="texto5" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 2 PMDP" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="174.0" prefHeight="24.0" prefWidth="567.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="588.0" text="       Hacer Práctica 1 PMDP" />
+                  <TextField prefHeight="36.0" prefWidth="588.0" />
                   <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
-                  <RadioButton layoutX="6.0" layoutY="10.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="radiobutton6" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#tarea6" />
+                  <Label fx:id="texto6" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 1 PMDP" />
                </children>
             </AnchorPane>
          </children>
       </VBox>
-      <TextField layoutX="34.0" layoutY="390.0" opacity="0.37" prefHeight="46.0" prefWidth="588.0" promptText="             Agregar una tarea" style="-fx-background-color: black;">
+      <TextField fx:id="textfieldagregar" layoutX="34.0" layoutY="390.0" opacity="0.37" prefHeight="46.0" prefWidth="588.0" promptText="             Agregar una tarea" style="-fx-background-color: black;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
