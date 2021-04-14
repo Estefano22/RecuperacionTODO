@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="661.0" style="-fx-background-color: #AF32F9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="661.0" style="-fx-background-color: #AF32F9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="33.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -45,7 +45,7 @@
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
                   </ImageView>
-                  <Label fx:id="texto2" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 2 PSP" />
+                  <Label fx:id="texto2" layoutX="31.0" layoutY="10.0" text="Hacer Práctica 1 PSP" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="51.0" prefHeight="24.0" prefWidth="567.0">
@@ -98,7 +98,7 @@
             </AnchorPane>
          </children>
       </VBox>
-      <TextField fx:id="textfieldagregar" layoutX="34.0" layoutY="390.0" opacity="0.37" prefHeight="46.0" prefWidth="588.0" promptText="             Agregar una tarea" style="-fx-background-color: black;">
+      <TextField fx:id="textfieldagregar" disable="true" layoutX="34.0" layoutY="390.0" opacity="0.37" prefHeight="46.0" prefWidth="588.0" promptText="             Agregar una tarea" style="-fx-background-color: black;" text="          ">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -108,7 +108,7 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="388.0" opacity="0.53" prefHeight="36.0" prefWidth="25.0" text="+" textFill="WHITE">
+      <Label fx:id="labelagregar" disable="true" layoutX="39.0" layoutY="388.0" opacity="0.53" prefHeight="36.0" prefWidth="25.0" text="+" textFill="WHITE">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>
