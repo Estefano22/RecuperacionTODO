@@ -15,136 +15,108 @@ public class Controller {
 
     @FXML
     public void initialize() {
-        lista.add(texto1);
-        lista.add(texto2);
-        lista.add(texto3);
-        lista.add(texto4);
-        lista.add(texto5);
-        lista.add(texto6);
+        lista.add(label1);
+        lista.add(label2);
+        lista.add(label3);
+        lista.add(label4);
+        lista.add(label5);
+        lista.add(label6);
 
     }
 
     @FXML
-    RadioButton radiobutton1;
+    RadioButton radiobutton1, radiobutton2, radiobutton3, radiobutton4, radiobutton5, radiobutton6;
 
-    @FXML
-    RadioButton radiobutton2;
-
-    @FXML
-    RadioButton radiobutton3;
-
-    @FXML
-    RadioButton radiobutton4;
-
-    @FXML
-    RadioButton radiobutton5;
-
-    @FXML
-    RadioButton radiobutton6;
-
-    @FXML
-    Label texto1;
-
-    @FXML
-    Label texto2;
-
-    @FXML
-    Label texto3;
-
-    @FXML
-    Label texto4;
-
-    @FXML
-    Label texto5;
-
-    @FXML
-    Label texto6;
-
-    @FXML
-    Label labelagregar;
-
-    @FXML
-    TextField textfieldagregar;
 
 
     @FXML
-    public void tarea1(){
-        texto1.setText("");
-        labelagregar.setDisable(false);
+    Label label1,label2, label3, label4, label5, label6;
+
+
+    @FXML
+    Label LabelAgregar;
+
+    @FXML
+    TextField TextfieldAgregar;
+
+
+    @FXML
+    public void RadioButton1seleccionado(){
+        label1.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
+        //agregartexto();
 
 
     }
 
     @FXML
-    public void tarea2(){
-        texto2.setText("");
-        labelagregar.setDisable(false);
+    public void RadioButton2seleccionado(){
+        label2.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
-        texto2.setText("");
+        //agregartexto();
+        //texto2.setText("");
 
     }
 
     @FXML
-    public void tarea3(){
-        texto3.setText("");
-        labelagregar.setDisable(false);
+    public void RadioButton3seleccionado(){
+        label3.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
-        texto3.setText("");
+        //agregartexto();
+        //texto3.setText("");
 
     }
 
     @FXML
-    public void tarea4(){
-        texto4.setText("");
-        labelagregar.setDisable(false);
+    public void RadioButton4seleccionado(){
+        label4.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
-        texto4.setText("");
+        //agregartexto();
+        //texto4.setText("");
 
     }
 
     @FXML
-    public void tarea5(){
-        texto5.setText("");
-        labelagregar.setDisable(false);
+    public void RadioButton5seleccionado(){
+        label5.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
-        texto5.setText("");
+        //agregartexto();
+        //texto5.setText("");
 
     }
 
     @FXML
-    public void tarea6(){
-        texto6.setText("");
-        labelagregar.setDisable(false);
+    public void RadioButton6seleccionado(){
+        label6.setText("");
+        LabelAgregar.setDisable(false);
         activaragregartarea();
-        agregartexto();
-        texto6.setText("");
+        //agregartexto();
+        //texto6.setText("");
 
 
     }
 
-public void activaragregartarea (){
-        if (! labelagregar. isDisabled()){
-            textfieldagregar.setDisable(false);
-        }
-}
-
-public void agregartexto(){
-    textfieldagregar.getText();
-    for (Label l : lista) {
-        if (l.getText().contentEquals("")) {
-            l.setText(textfieldagregar.getText());
-
+    public void activaragregartarea (){
+        if (! LabelAgregar. isDisabled()){
+            TextfieldAgregar.setDisable(false);
         }
     }
 
+    public void agregartexto(){
+        //textfieldagregar.getText(); no sirve de nada
+        for (Label l : lista) {
+            if (l.getText().contentEquals("")) {
+                l.setText(TextfieldAgregar.getText());
+            }
 
-}
+        }
+
+    }
 
 
 }
