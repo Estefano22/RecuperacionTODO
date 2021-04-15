@@ -108,7 +108,7 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="labelagregar" disable="true" layoutX="39.0" layoutY="388.0" opacity="0.53" prefHeight="36.0" prefWidth="25.0" text="+" textFill="WHITE">
+      <Label fx:id="labelagregar" disable="true" layoutX="39.0" layoutY="388.0" onMouseClicked="#agregartexto" prefHeight="36.0" prefWidth="25.0" text="+" textFill="WHITE">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>

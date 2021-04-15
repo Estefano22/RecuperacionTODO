@@ -11,16 +11,16 @@ public class Controller {
 
     //Integer i=new Integer(2);
 
-    ArrayList<String> lista = new ArrayList();
+    ArrayList<Label> lista = new ArrayList();
 
     @FXML
     public void initialize() {
-        lista.add("Hacer Práctica 2 PSP");
-        lista.add("Hacer Práctica 1 PSP");
-        lista.add("Hacer Práctica 2 DI");
-        lista.add("Hacer Práctica 1 DI");
-        lista.add("Hacer Práctica 2 PMDP");
-        lista.add("Hacer Práctica 1 PMDP");
+        lista.add(texto1);
+        lista.add(texto2);
+        lista.add(texto3);
+        lista.add(texto4);
+        lista.add(texto5);
+        lista.add(texto6);
 
     }
 
@@ -72,7 +72,8 @@ public class Controller {
         texto1.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
-        texto1.setText("");
+        agregartexto();
+
 
     }
 
@@ -81,6 +82,7 @@ public class Controller {
         texto2.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
+        agregartexto();
         texto2.setText("");
 
     }
@@ -90,6 +92,7 @@ public class Controller {
         texto3.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
+        agregartexto();
         texto3.setText("");
 
     }
@@ -99,6 +102,7 @@ public class Controller {
         texto4.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
+        agregartexto();
         texto4.setText("");
 
     }
@@ -108,6 +112,7 @@ public class Controller {
         texto5.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
+        agregartexto();
         texto5.setText("");
 
     }
@@ -117,7 +122,9 @@ public class Controller {
         texto6.setText("");
         labelagregar.setDisable(false);
         activaragregartarea();
+        agregartexto();
         texto6.setText("");
+
 
     }
 
@@ -126,5 +133,18 @@ public void activaragregartarea (){
             textfieldagregar.setDisable(false);
         }
 }
+
+public void agregartexto(){
+    textfieldagregar.getText();
+    for (Label l : lista) {
+        if (l.getText().contentEquals("")) {
+            l.setText(textfieldagregar.getText());
+
+        }
+    }
+
+
+}
+
 
 }
