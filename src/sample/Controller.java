@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Controller {
 
-    //Integer i=new Integer(2);
+
 
     ArrayList<Label> lista = new ArrayList();
 
@@ -45,8 +45,6 @@ public class Controller {
         label1.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-
 
     }
 
@@ -55,9 +53,6 @@ public class Controller {
         label2.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-        //texto2.setText("");
-
     }
 
     @FXML
@@ -65,9 +60,6 @@ public class Controller {
         label3.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-        //texto3.setText("");
-
     }
 
     @FXML
@@ -75,9 +67,6 @@ public class Controller {
         label4.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-        //texto4.setText("");
-
     }
 
     @FXML
@@ -85,9 +74,6 @@ public class Controller {
         label5.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-        //texto5.setText("");
-
     }
 
     @FXML
@@ -95,10 +81,6 @@ public class Controller {
         label6.setText("");
         LabelAgregar.setDisable(false);
         activaragregartarea();
-        //agregartexto();
-        //texto6.setText("");
-
-
     }
 
     public void activaragregartarea (){
@@ -108,11 +90,12 @@ public class Controller {
     }
 
     public void agregartexto(){
-        //textfieldagregar.getText(); no sirve de nada
         for (Label l : lista) {
             if (l.getText().contentEquals("")) {
                 l.setText(TextfieldAgregar.getText());
+                break;
             }
+
 
         }
 
