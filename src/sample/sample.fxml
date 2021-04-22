@@ -28,7 +28,7 @@
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
                   <RadioButton fx:id="radiobutton1" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#RadioButton1seleccionado" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView1" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
@@ -40,7 +40,7 @@
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
                   <RadioButton fx:id="radiobutton2" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#RadioButton2seleccionado" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView2" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
@@ -52,7 +52,7 @@
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
                   <RadioButton fx:id="radiobutton3" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#RadioButton3seleccionado" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView3" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
@@ -64,7 +64,7 @@
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
                   <RadioButton fx:id="radiobutton4" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#RadioButton4seleccionado" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView4" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
@@ -76,7 +76,7 @@
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
                   <RadioButton fx:id="radiobutton5" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#RadioButton5seleccionado" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView5" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
@@ -87,7 +87,7 @@
             <AnchorPane layoutX="10.0" layoutY="174.0" prefHeight="24.0" prefWidth="567.0">
                <children>
                   <TextField prefHeight="36.0" prefWidth="588.0" />
-                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ImageView6" fitHeight="26.0" fitWidth="29.0" layoutX="534.0" layoutY="5.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Imagenes/estrella.jpg" />
                      </image>
