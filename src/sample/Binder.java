@@ -2,7 +2,6 @@ package sample;
 
 import java.io.File;
 import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
 import  javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -16,7 +15,7 @@ public class Binder {
     private static File Estrellanormal = new File("src/Imagenes/estrella.JPG");
     private static Image Estrella = new Image(Estrellanormal.toURI().toString());
 
-    public static void binderTarea(Tarea tarea, Label l, RadioButton radioButton, ImageView estrella){
+    public static void binderTarea(Tarea tarea, Label l, ImageView estrella){
 
         if (tarea.esFavorito){
             estrella.setImage(EstrellaAmarilla);
