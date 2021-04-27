@@ -5,7 +5,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
-import javax.swing.text.html.ImageView;
+import javafx.scene.image.ImageView;
+
 import java.util.ArrayList;
 
 public class Controller {
@@ -15,6 +16,9 @@ public class Controller {
 
     @FXML
     RadioButton radiobutton1, radiobutton2, radiobutton3, radiobutton4, radiobutton5, radiobutton6;
+
+    @FXML
+    ImageView estrella1,estrella2,estrella3,estrella4,estrella5,estrella6;
 
     @FXML
     Label label1, label2, label3, label4, label5, label6;
@@ -66,28 +70,39 @@ public class Controller {
         listadeTarea.add(tarea5);
         listadeTarea.add(tarea6);
 
-        Binder.binderTarea(tarea1,label1, radiobutton1);
-        Binder.binderTarea(tarea2,label2, radiobutton2);
-        Binder.binderTarea(tarea3, label3, radiobutton3);
-        Binder.binderTarea(tarea4,label4, radiobutton4);
-        Binder.binderTarea(tarea5,label5, radiobutton5);
-        Binder.binderTarea(tarea6,label6, radiobutton6);
+
+        listaImagenes.add(estrella1);
+        listaImagenes.add(estrella2);
+        listaImagenes.add(estrella3);
+        listaImagenes.add(estrella4);
+        listaImagenes.add(estrella5);
+        listaImagenes.add(estrella6);
+
+
+
+        Binder.binderTarea(tarea1,label1, radiobutton1,estrella1);
+        Binder.binderTarea(tarea2,label2, radiobutton2,estrella2);
+        Binder.binderTarea(tarea3, label3, radiobutton3,estrella3);
+        Binder.binderTarea(tarea4,label4, radiobutton4,estrella4);
+        Binder.binderTarea(tarea5,label5, radiobutton5,estrella5);
+        Binder.binderTarea(tarea6,label6, radiobutton6,estrella6);
 
     }
 
     @FXML
     public void RadioButton1seleccionado () {
         label1.setText("");
-        Binder.binderTarea(tarea1,label1,radiobutton1);
+        Binder.binderTarea(tarea1,label1,radiobutton1,estrella1);
         LabelAgregar.setDisable(false);
         activaragregartarea();
+
 
     }
 
     @FXML
     public void RadioButton2seleccionado () {
         label2.setText("");
-        Binder.binderTarea(tarea2,label2,radiobutton2);
+        Binder.binderTarea(tarea2,label2,radiobutton2,estrella2);
         LabelAgregar.setDisable(false);
         activaragregartarea();
     }
@@ -95,7 +110,7 @@ public class Controller {
     @FXML
     public void RadioButton3seleccionado () {
         label3.setText("");
-        Binder.binderTarea(tarea3,label3,radiobutton3);
+        Binder.binderTarea(tarea3,label3,radiobutton3,estrella3);
         LabelAgregar.setDisable(false);
         activaragregartarea();
     }
@@ -103,7 +118,7 @@ public class Controller {
     @FXML
     public void RadioButton4seleccionado () {
         label4.setText("");
-        Binder.binderTarea(tarea4,label4,radiobutton4);
+        Binder.binderTarea(tarea4,label4,radiobutton4,estrella4);
         LabelAgregar.setDisable(false);
         activaragregartarea();
     }
@@ -111,7 +126,7 @@ public class Controller {
     @FXML
     public void RadioButton5seleccionado () {
         label5.setText("");
-        Binder.binderTarea(tarea5,label5,radiobutton5);
+        Binder.binderTarea(tarea5,label5,radiobutton5,estrella5);
         LabelAgregar.setDisable(false);
         activaragregartarea();
     }
@@ -119,9 +134,43 @@ public class Controller {
     @FXML
     public void RadioButton6seleccionado () {
         label6.setText("");
-        Binder.binderTarea(tarea6,label6,radiobutton6);
+        Binder.binderTarea(tarea6,label6,radiobutton6,estrella6);
         LabelAgregar.setDisable(false);
         activaragregartarea();
+    }
+
+    @FXML
+    public void estrella1seleccionada(){
+        tarea1.esFavorito = !tarea1.esFavorito;
+        Binder.binderTarea(tarea1,label1,radiobutton1,estrella1);
+    }
+    @FXML
+    public void estrella2seleccionada(){
+        tarea2.esFavorito = !tarea2.esFavorito;
+        Binder.binderTarea(tarea2,label2,radiobutton2,estrella2);
+    }
+
+    @FXML
+    public void estrella3seleccionada(){
+        tarea3.esFavorito = !tarea3.esFavorito;
+        Binder.binderTarea(tarea3,label3,radiobutton3,estrella3);
+    }
+
+    @FXML
+    public void estrella4seleccionada(){
+        tarea4.esFavorito = !tarea4.esFavorito;
+        Binder.binderTarea(tarea4,label4,radiobutton4,estrella4);
+    }
+    @FXML
+    public void estrella5seleccionada(){
+        tarea5.esFavorito = !tarea5.esFavorito;
+        Binder.binderTarea(tarea5,label5,radiobutton5,estrella5);
+    }
+
+    @FXML
+    public void estrella6seleccionada(){
+        tarea6.esFavorito = !tarea6.esFavorito;
+        Binder.binderTarea(tarea6,label6,radiobutton6,estrella6);
     }
 
     public void activaragregartarea () {
@@ -138,5 +187,8 @@ public class Controller {
             }
         }
     }
+
+
+
 
 }
