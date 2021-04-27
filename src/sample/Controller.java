@@ -35,7 +35,7 @@ public class Controller {
     ArrayList<Tarea> listadeTarea = new ArrayList();
     ArrayList<ImageView> listaImagenes = new ArrayList();
 
-    //final ToggleGroup group = new ToggleGroup();
+    final ToggleGroup group = new ToggleGroup();
 
     @FXML
     public void initialize(){
@@ -47,24 +47,13 @@ public class Controller {
         tarea5 = new Tarea("Hacer Práctica 2 PMDP", false);
         tarea6 = new Tarea("Hacer Práctica 1 PMDP", false);
 
-       /* RadioButton radiobutton1 = new RadioButton();
+
         radiobutton1.setToggleGroup(group);
-        radiobutton1.setSelected(true);
-
-        RadioButton radiobutton2 = new RadioButton();
         radiobutton2.setToggleGroup(group);
-
-        RadioButton radiobutton3 = new RadioButton();
         radiobutton3.setToggleGroup(group);
-
-        RadioButton radiobutton4 = new RadioButton();
         radiobutton4.setToggleGroup(group);
-
-        RadioButton radiobutton5 = new RadioButton();
         radiobutton5.setToggleGroup(group);
-
-        RadioButton radiobutton6 = new RadioButton();
-        radiobutton6.setToggleGroup(group);*/
+        radiobutton6.setToggleGroup(group);
 
         listadeLabel.add(label1);
         listadeLabel.add(label2);
