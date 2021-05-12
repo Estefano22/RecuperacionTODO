@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class ControllerPantallaPrincipal {
 
 
-    ControllerPantallaDetalles controller2 = null;
+
 
     @FXML
     Tarea tarea1, tarea2, tarea3, tarea4, tarea5, tarea6;
@@ -37,6 +37,7 @@ public class ControllerPantallaPrincipal {
     @FXML
     TextField TextfieldAgregar;
 
+    ControllerPantallaDetalles controller2 = null;
 
     ArrayList<Label> listadeLabel = new ArrayList();
     ArrayList<Tarea> listadeTarea = new ArrayList();
@@ -157,7 +158,7 @@ public class ControllerPantallaPrincipal {
             Scene scene = new Scene(root,650,500);
             stage.setScene(scene);
             stage.show();
-            controller2.recibirTarea(tarea1);
+
 
         } catch(Exception e) {
 

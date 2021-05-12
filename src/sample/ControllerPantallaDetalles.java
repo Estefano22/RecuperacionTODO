@@ -25,31 +25,30 @@ public class ControllerPantallaDetalles {
     @FXML
     Label labelFechadeCreacion, labelFechadeUltimaModificacion;
 
-    String textoOriginal, nombreOriginal;
+    String textoprincipio, nombreprincipio;
 
     @FXML
     public void recibirTarea(Tarea tarea){
 
         tareaAux = new Tarea(tarea.texto,tarea.esFavorito,tarea.detallesTarea,tarea.fechadeCreacion,tarea.fechadeUltimaModificacion);
 
-
-        textfieldnombredelatarea.setText(tarea.texto);
         labelFechadeCreacion.setText(tarea.fechadeCreacion);
+        textfieldnombredelatarea.setText(tarea.texto);
 
-        textoOriginal=TextAreaDetalles.getText();
-        nombreOriginal=textfieldnombredelatarea.getText();
+        textoprincipio =TextAreaDetalles.getText();
+        nombreprincipio =textfieldnombredelatarea.getText();
     }
 
     @FXML
     public void modificarDetalles(){
 
-        Long tiempoReal = System.currentTimeMillis();
-        SimpleDateFormat formatodeFecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
-        Date fecha = new Date(tiempoReal);
-        String tiempo = formatodeFecha.format(fecha);
+        Long tiempoactual = System.currentTimeMillis();
+        SimpleDateFormat formatodelafecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
+        Date fecha = new Date(tiempoactual);
+        String tiempo = formatodelafecha.format(fecha);
 
         labelFechadeUltimaModificacion.setText(""+tiempo);
-        labelFechadeUltimaModificacion.setVisible(!TextAreaDetalles.getText().equals(textoOriginal));
+        labelFechadeUltimaModificacion.setVisible(TextAreaDetalles.getText().equals(textoprincipio));
     }
 
     public void cambiarNombredelaTarea(){
@@ -60,7 +59,7 @@ public class ControllerPantallaDetalles {
         String tiempo = formatodeFecha.format(fecha);
 
         labelFechadeUltimaModificacion.setText(""+tiempo);
-        labelFechadeUltimaModificacion.setVisible(!textfieldnombredelatarea.getText().equals(nombreOriginal));
+        labelFechadeUltimaModificacion.setVisible(textfieldnombredelatarea.getText().equals(nombreprincipio));
     }
 
 
