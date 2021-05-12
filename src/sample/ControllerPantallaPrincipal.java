@@ -1,16 +1,23 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-public class Controller {
+public class ControllerPantallaPrincipal {
+
+
+    ControllerPantallaDetalles controller2 = null;
 
     @FXML
     Tarea tarea1, tarea2, tarea3, tarea4, tarea5, tarea6;
@@ -40,12 +47,12 @@ public class Controller {
     @FXML
     public void initialize(){
 
-        tarea1 = new Tarea("Hacer Práctica 2 PSP", false);
-        tarea2 = new Tarea("Hacer Práctica 1 PSP", false);
-        tarea3 = new Tarea("Hacer Práctica 2 DI", false);
-        tarea4 = new Tarea("Hacer Práctica 1 DI", false);
-        tarea5 = new Tarea("Hacer Práctica 2 PMDP", false);
-        tarea6 = new Tarea("Hacer Práctica 1 PMDP", false);
+        tarea1 = new Tarea("Hacer Práctica 2 PSP", false, "tarea 1","09-03-2019", "");
+        tarea2 = new Tarea("Hacer Práctica 1 PSP", false, "tarea 2", "09-03-2019", "");
+        tarea3 = new Tarea("Hacer Práctica 2 DI", false, "tarea 3","09-03-2019","");
+        tarea4 = new Tarea("Hacer Práctica 1 DI", false,"tarea 4","09-03-2019","");
+        tarea5 = new Tarea("Hacer Práctica 2 PMDP", false,"tarea 5","09-03-2019","");
+        tarea6 = new Tarea("Hacer Práctica 1 PMDP", false,"tarea 6","09-03-2019","");
 
 
         radiobutton1.setToggleGroup(group);
@@ -139,6 +146,25 @@ public class Controller {
         LabelAgregar.setDisable(false);
         activaragregartarea();
     }
+
+    @FXML
+    public void clikcarLabel(){
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+            AnchorPane root = (AnchorPane) loader.load();
+            controller2 = loader.getController();
+            Scene scene = new Scene(root,650,500);
+            stage.setScene(scene);
+            stage.show();
+            controller2.recibirTarea(tarea1);
+
+        } catch(Exception e) {
+
+        }
+    }
+
+
 
     @FXML
     public void estrella1seleccionada(){
