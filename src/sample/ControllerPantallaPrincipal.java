@@ -16,9 +16,6 @@ import java.util.ArrayList;
 
 public class ControllerPantallaPrincipal {
 
-
-
-
     @FXML
     Tarea tarea1, tarea2, tarea3, tarea4, tarea5, tarea6;
 
@@ -149,7 +146,7 @@ public class ControllerPantallaPrincipal {
     }
 
     @FXML
-    public void clikcarLabel(){
+    public void clikcarLabel1(){
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
@@ -158,13 +155,101 @@ public class ControllerPantallaPrincipal {
             Scene scene = new Scene(root,650,500);
             stage.setScene(scene);
             stage.show();
-
+            controller2.recibirTarea(tarea1);
 
         } catch(Exception e) {
 
         }
     }
 
+    @FXML
+    public void clikcarLabel2(){
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+            AnchorPane root = (AnchorPane) loader.load();
+            controller2 = loader.getController();
+            Scene scene = new Scene(root,650,500);
+            stage.setScene(scene);
+            stage.show();
+            controller2.recibirTarea(tarea2);
+
+        } catch(Exception e) {
+            e.printStackTrace();
+
+        }
+    }
+
+    @FXML
+    public void clikcarLabel3(){
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+            AnchorPane root = (AnchorPane) loader.load();
+            controller2 = loader.getController();
+            Scene scene = new Scene(root,650,500);
+            stage.setScene(scene);
+            stage.show();
+            controller2.recibirTarea(tarea3);
+
+
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @FXML
+    public void clikcarLabel4() {
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+            AnchorPane root = (AnchorPane) loader.load();
+            controller2 = loader.getController();
+            Scene scene = new Scene(root, 650, 500);
+            stage.setScene(scene);
+            stage.show();
+            controller2.recibirTarea(tarea4);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+        @FXML
+        public void clikcarLabel5(){
+            try {
+                Stage stage = new Stage();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+                AnchorPane root = (AnchorPane) loader.load();
+                controller2 = loader.getController();
+                Scene scene = new Scene(root,650,500);
+                stage.setScene(scene);
+                stage.show();
+                controller2.recibirTarea(tarea5);
+
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        @FXML
+        public void clikcarLabel6(){
+            try {
+                Stage stage = new Stage();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
+                AnchorPane root = (AnchorPane) loader.load();
+                controller2 = loader.getController();
+                Scene scene = new Scene(root,650,500);
+                stage.setScene(scene);
+                stage.show();
+                controller2.recibirTarea(tarea6);
+
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
+        }
 
 
     @FXML

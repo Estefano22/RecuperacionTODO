@@ -14,53 +14,53 @@ public class ControllerPantallaDetalles {
     public void initialize(){
     }
 
-    Tarea tareaAux;
+
 
     @FXML
-    TextField textfieldnombredelatarea;
+    TextField textfieldNombreDeLaTarea;
 
     @FXML
-    TextArea TextAreaDetalles;
+    TextArea textAreaDetalles;
 
     @FXML
     Label labelFechadeCreacion, labelFechadeUltimaModificacion;
 
-    String textoprincipio, nombreprincipio;
+    String textoPrincipio, detallesPrincipio, fechaDeModificacionPrincipio;
 
-    @FXML
+@FXML
     public void recibirTarea(Tarea tarea){
-
-        tareaAux = new Tarea(tarea.texto,tarea.esFavorito,tarea.detallesTarea,tarea.fechadeCreacion,tarea.fechadeUltimaModificacion);
-
         labelFechadeCreacion.setText(tarea.fechadeCreacion);
-        textfieldnombredelatarea.setText(tarea.texto);
+        textAreaDetalles.setText(tarea.detallesTarea);
+        textfieldNombreDeLaTarea.setText(tarea.texto);
+        labelFechadeUltimaModificacion.setText(tarea.fechadeUltimaModificacion);
 
-        textoprincipio =TextAreaDetalles.getText();
-        nombreprincipio =textfieldnombredelatarea.getText();
+        textoPrincipio = tarea.texto;
+        detallesPrincipio = tarea.detallesTarea;
+        fechaDeModificacionPrincipio = tarea.fechadeUltimaModificacion;
     }
 
     @FXML
-    public void modificarDetalles(){
-
-        Long tiempoactual = System.currentTimeMillis();
-        SimpleDateFormat formatodelafecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
-        Date fecha = new Date(tiempoactual);
-        String tiempo = formatodelafecha.format(fecha);
-
-        labelFechadeUltimaModificacion.setText(""+tiempo);
-        labelFechadeUltimaModificacion.setVisible(TextAreaDetalles.getText().equals(textoprincipio));
+    public void onKeyTypedDetalles(){
+        actualizarFechaUltimaModificacion();
     }
 
-    public void cambiarNombredelaTarea(){
+    private void actualizarFechaUltimaModificacion(){
 
-        Long tiempoReal = System.currentTimeMillis();
-        SimpleDateFormat formatodeFecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
-        Date fecha = new Date(tiempoReal);
-        String tiempo = formatodeFecha.format(fecha);
+        // PASO 1 - Comprobar si tengo que actualizar la fecha o no.
+        if(textoPrincipio.contentEquals(textfieldNombreDeLaTarea.getText()) && detallesPrincipio.contentEquals(textAreaDetalles.getText())) {
+            labelFechadeUltimaModificacion.setText(fechaDeModificacionPrincipio);
 
-        labelFechadeUltimaModificacion.setText(""+tiempo);
-        labelFechadeUltimaModificacion.setVisible(textfieldnombredelatarea.getText().equals(nombreprincipio));
+        }else{
+            Long tiempoactual = System.currentTimeMillis();
+            SimpleDateFormat formatodelafecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
+            Date fecha = new Date(tiempoactual);
+            String tiempo = formatodelafecha.format(fecha);
+
+            labelFechadeUltimaModificacion.setText(tiempo);
+        }
+        // Si lo tengo modificar -> poner la fecha nueva
+        // Sino tendré que mostrar la
+
     }
-
 
 }
