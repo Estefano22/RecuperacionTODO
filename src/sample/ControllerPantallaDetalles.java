@@ -13,9 +13,6 @@ public class ControllerPantallaDetalles {
     @FXML
     public void initialize(){
     }
-
-
-
     @FXML
     TextField textfieldNombreDeLaTarea;
 
@@ -55,8 +52,9 @@ public class ControllerPantallaDetalles {
             SimpleDateFormat formatodelafecha = new SimpleDateFormat("dd-MM-YYYY kk:mm");
             Date fecha = new Date(tiempoactual);
             String tiempo = formatodelafecha.format(fecha);
-
             labelFechadeUltimaModificacion.setText(tiempo);
+
+
         }
         // Si lo tengo modificar -> poner la fecha nueva
         // Sino tendré que mostrar la

@@ -192,12 +192,10 @@ public class ControllerPantallaPrincipal {
             stage.show();
             controller2.recibirTarea(tarea3);
 
-
         } catch(Exception e) {
             e.printStackTrace();
         }
     }
-
 
     @FXML
     public void clikcarLabel4() {
@@ -250,7 +248,6 @@ public class ControllerPantallaPrincipal {
                 e.printStackTrace();
             }
         }
-
 
     @FXML
     public void estrella1seleccionada(){
