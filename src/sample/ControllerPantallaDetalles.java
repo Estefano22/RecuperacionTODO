@@ -43,7 +43,7 @@ public class ControllerPantallaDetalles {
 
     private void actualizarFechaUltimaModificacion(){
 
-        // PASO 1 - Comprobar si tengo que actualizar la fecha o no.
+
         if(textoPrincipio.contentEquals(textfieldNombreDeLaTarea.getText()) && detallesPrincipio.contentEquals(textAreaDetalles.getText())) {
             labelFechadeUltimaModificacion.setText(fechaDeModificacionPrincipio);
 
@@ -56,8 +56,7 @@ public class ControllerPantallaDetalles {
 
 
         }
-        // Si lo tengo modificar -> poner la fecha nueva
-        // Sino tendré que mostrar la
+
 
     }
 

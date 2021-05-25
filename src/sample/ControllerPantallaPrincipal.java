@@ -290,12 +290,26 @@ public class ControllerPantallaPrincipal {
     }
 
     public void agregartexto () {
+
+        for (int i = 0; i< listadeTarea.size(); i++) {
+            if (listadeTarea.get(i).texto.isEmpty()){
+                listadeTarea.get(i).texto = TextfieldAgregar.getText();
+                Binder.binderTarea(listadeTarea.get(i),listadeLabel.get(i), listaImagenes.get(i));
+                break;
+            }
+        }
+
+
+
+        /*
         for (Label l : listadeLabel) {
             if (l.getText().contentEquals("")) {
                 l.setText(TextfieldAgregar.getText());
                 break;
             }
-        }
+        }*/
+
+
         TextfieldAgregar.setDisable(false);
         TextfieldAgregar.setText("");
 
