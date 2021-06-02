@@ -151,14 +151,14 @@ public class ControllerPantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
             AnchorPane root = (AnchorPane) loader.load();
-            controller2 = loader.getController();
             Scene scene = new Scene(root,650,500);
             stage.setScene(scene);
-            stage.show();
+            ControllerPantallaDetalles controller2 = loader.getController();
             controller2.recibirTarea(tarea1);
-
+            controller2.enviarController1(this);
+            stage.show();
         } catch(Exception e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -168,11 +168,13 @@ public class ControllerPantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
             AnchorPane root = (AnchorPane) loader.load();
-            controller2 = loader.getController();
             Scene scene = new Scene(root,650,500);
             stage.setScene(scene);
-            stage.show();
+            ControllerPantallaDetalles controller2 = loader.getController();
             controller2.recibirTarea(tarea2);
+            controller2.enviarController1(this);
+            stage.show();
+
 
         } catch(Exception e) {
             e.printStackTrace();
@@ -186,11 +188,12 @@ public class ControllerPantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
             AnchorPane root = (AnchorPane) loader.load();
-            controller2 = loader.getController();
             Scene scene = new Scene(root,650,500);
             stage.setScene(scene);
-            stage.show();
+            ControllerPantallaDetalles controller2 = loader.getController();
             controller2.recibirTarea(tarea3);
+            controller2.enviarController1(this);
+            stage.show();
 
         } catch(Exception e) {
             e.printStackTrace();
@@ -203,11 +206,12 @@ public class ControllerPantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
             AnchorPane root = (AnchorPane) loader.load();
-            controller2 = loader.getController();
             Scene scene = new Scene(root, 650, 500);
             stage.setScene(scene);
-            stage.show();
+            ControllerPantallaDetalles controller2 = loader.getController();
             controller2.recibirTarea(tarea4);
+            controller2.enviarController1(this);
+            stage.show();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -220,17 +224,17 @@ public class ControllerPantallaPrincipal {
                 Stage stage = new Stage();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
                 AnchorPane root = (AnchorPane) loader.load();
-                controller2 = loader.getController();
                 Scene scene = new Scene(root,650,500);
                 stage.setScene(scene);
-                stage.show();
+                ControllerPantallaDetalles controller2 = loader.getController();
                 controller2.recibirTarea(tarea5);
+                controller2.enviarController1(this);
+                stage.show();
 
             } catch(Exception e) {
                 e.printStackTrace();
             }
         }
-
 
         @FXML
         public void clikcarLabel6(){
@@ -238,11 +242,12 @@ public class ControllerPantallaPrincipal {
                 Stage stage = new Stage();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalladetalles.fxml"));
                 AnchorPane root = (AnchorPane) loader.load();
-                controller2 = loader.getController();
                 Scene scene = new Scene(root,650,500);
                 stage.setScene(scene);
-                stage.show();
+                ControllerPantallaDetalles controller2 = loader.getController();
                 controller2.recibirTarea(tarea6);
+                controller2.enviarController1(this);
+                stage.show();
 
             } catch(Exception e) {
                 e.printStackTrace();
@@ -299,20 +304,14 @@ public class ControllerPantallaPrincipal {
             }
         }
 
-
-
-        /*
-        for (Label l : listadeLabel) {
-            if (l.getText().contentEquals("")) {
-                l.setText(TextfieldAgregar.getText());
-                break;
-            }
-        }*/
-
-
         TextfieldAgregar.setDisable(false);
         TextfieldAgregar.setText("");
 
+    }
+
+    public void actualiazarTarea(Tarea tareaRecibida){
+    System.out.println(tareaRecibida);
+    
     }
 
 }
